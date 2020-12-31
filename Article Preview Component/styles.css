@@ -1,0 +1,231 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */
+
+  * {
+      box-sizing: border-box;
+      font-family: 'Manrope';
+      margin: 0px;
+      padding: 0px;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: 20px;
+      letter-spacing: 0.12187500298023224px;
+      text-align: left;
+  }
+
+  body {
+      background: #F2F2F2;
+      width: 100vw;
+      padding: 200px;
+  }
+
+  .mainContainer {
+      /* border: solid black 1px; */
+      width: 730px;
+      height: 280px;
+      max-width: 1200px;
+      min-width: 600px;
+      margin: auto;
+      display: flex;
+      background-color: #FFFFFF;
+      box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+      border-radius: 10px;
+  }
+
+  .mainContainer__imageContainer {
+      /* border: solid red 1px; */
+      height: 100%;
+      width: 285px;
+  }
+
+  .mainContainer__imageContainer img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .mainContainer__textContainer {
+      width: 445px;
+      padding: 32px 40px;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #48556A;
+    margin-bottom: 12px;
+  }
+
+  .mainContainer__textContainer p {
+   
+    color: #6E8098;
+  }
+
+  .textContainer__userInfo {
+      position: relative;
+      /* border: solid orange 1px; */
+      width: 365px;
+      height: 40px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .textContainer__userInfo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-block;
+  }
+
+  
+
+   .nameDate {
+      margin-left: 6px;
+      width: 116px;
+      height: 40px;
+      display: inline-block;
+   }
+
+  .userName {
+    font-weight: 700;
+    color: #48556A;
+  }
+
+  .date {
+    color: #9DAEC2;
+  }
+
+  .shareButton {
+    float: right;
+    background: #ECF2F8;
+    width: 32px;
+    height: 32px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  #share {
+      width: 15px;
+      height: 13px; 
+  } 
+
+  .shareButton:hover {
+      background-color: #6E8098;
+  }
+
+ .icon:hover *{
+      fill: white;
+  }
+
+  .shareBox {
+      position: absolute;
+      display: none;
+      align-items: center;  
+      padding: 18px 30px 15px 37px;  
+      width: 248px;
+      height: 55px;
+      left: 225px;
+      top: -70px;
+      box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+      border-radius: 10px;
+      background: #48556A;
+  }
+
+  .shareBoxArrow {
+    position: absolute;
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #48556A;
+    left: 335px;
+    top: -15px
+  }
+
+  .shareBox__text {
+      display: inline;
+      font-weight: 200;
+      line-height: 20px;
+      letter-spacing: 5px;
+      margin-right: 20px;
+  }
+
+  .shareBox svg {
+      margin-right: 11px;
+  }
+
+  @media only screen and (max-width: 700px){
+
+      body {
+          padding: 200px 50px;
+      }
+
+      .mainContainer {
+        width: 327px;
+        height: 512px;
+        max-width: 327px;
+        min-width: 327px;
+        flex-direction: column;
+    }
+
+    .mainContainer__imageContainer {
+        height: 200px;
+        width: 327px;
+    }
+
+    .mainContainer__imageContainer img {
+        width: 327px;
+        height: 100%;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .mainContainer__textContainer {
+        width: 327px;
+        padding: 40px 32px;
+    }
+
+    h1 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .textContainer__userInfo {
+        width:100%;
+        margin-top: 54px;
+    }
+
+    .shareButton {
+        position: relative;
+        z-index: 100;
+    }
+
+    .shareBox {
+        display: none;
+        padding: 18px 30px 15px 37px;  
+        width: 327px;
+        height: 73px;
+        left: -34px;
+        top: -19px;
+        box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+        border-radius: 0px 0px 10px 10px;
+        background: #48556A;
+    }
+
+    .shareBoxArrow{
+        top:0;
+        left:0;
+    }
+  }
+ 
