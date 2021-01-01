@@ -2,6 +2,8 @@ const shareButton = document.querySelector('.shareButton');
 const shareBox = document.querySelector('.shareBox');
 const shareBoxArrow = document.querySelector('.shareBoxArrow');
 
+shareBox.style.display = 'none';
+
 shareButton.addEventListener('click', function(){
     if(shareBox.style.display === 'none'){
         shareBox.style.display = 'flex';
